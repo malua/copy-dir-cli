@@ -1,0 +1,26 @@
+{
+  "name": "copy-dir-cli",
+  "version": "0.0.1",
+  "description": "a command-line tool to copy files from a directory to another directory",
+  "bin": {
+    "copy": "./bin/index"
+  },
+  "keywords": [
+  	"copy",
+  	"command-line tool"
+  ],
+  "main": "index.js",
+  "author": "zhangzongzheng <zzzhaichao@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ihaichao/copy-dir-cli.git"
+  },
+  "dependencies": {
+    "graceful-readlink": ">= 1.0.0"
+  },
+  "devDependencies": {
+    "should": ">= 0.0.1 <9.0.0",
+    "sinon": ">=1.17.1"
+  }
+}

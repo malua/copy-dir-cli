@@ -1,2 +1,11 @@
 # copy-dir-cli
-a command-line tool to copy files from a directory to another directory
+A CLI tool for copying files from a directory to another directory
+
+## Installation
+`npm install copy-dir-cli -g`
+
+## Execution
+`$ copy /src /dest`
+
+## License
+The MIT License
