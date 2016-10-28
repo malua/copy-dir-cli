@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var program = require('./commander.js');
+var program = require('commander');
 var fs = require('fs'),
     stat = fs.stat;
 
@@ -54,8 +54,13 @@ function exists(src, dest, callback) {
 
 program
     .version('0.0.1')
+    .allowUnknownOption()
     .usage('/src /dest')
     .action(function (src, dest) {
         exists(src, dest, copy)
     })
     .parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+    program.outputHelp();
+}
