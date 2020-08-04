@@ -3,7 +3,8 @@
   "version": "0.0.3",
   "description": "A CLI tool to copy files from a directory to another directory",
   "bin": {
-    "copy": "./bin/copy"
+    "copy": "./bin/copy",
+    "copy-dir-cli": "./bin/copy"
   },
   "keywords": [
   	"copy",
